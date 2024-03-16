@@ -1,0 +1,20 @@
+server.port: 7005
+server.error.include-message: always
+
+spring.webflux.base-path: /wegfest
+
+app:
+  iteration-service:
+    host: localhost
+    port: 7004
+  person-service:
+    host: localhost
+    port: 7001
+  scene-service:
+    host: localhost
+    port: 7003
+
+  logging:
+    level:
+      root: INFO
+      com.nicokuchling: DEBUG
